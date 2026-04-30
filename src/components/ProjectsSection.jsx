@@ -54,19 +54,36 @@ const ProjectCard = ({ project, index }) => (
 
         {/* Actions */}
         <div className="flex flex-wrap gap-4">
-            {project.links?.github && (
-                <motion.a
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    href={project.links.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-3 rounded-xl text-white bg-sky-500/30 hover:bg-sky-500/40 border border-sky-500/20 transition flex items-center gap-2 font-medium"
-                >
-                    <Github size={18} />
-                    View Source
-                </motion.a>
-            )}
+           {Array.isArray(project.links?.github) ? (
+    project.links.github.map((link, idx) => (
+        <motion.a
+            key={idx}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 rounded-xl text-white bg-sky-500/30 hover:bg-sky-500/40 border border-sky-500/20 transition flex items-center gap-2 font-medium"
+        >
+            <Github size={18} />
+            GitHub {idx + 1}
+        </motion.a>
+    ))
+) : (
+    project.links?.github && (
+        <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href={project.links.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 rounded-xl text-white bg-sky-500/30 hover:bg-sky-500/40 border border-sky-500/20 transition flex items-center gap-2 font-medium"
+        >
+            <Github size={18} />
+            View Source
+        </motion.a>
+    )
+)}
             {project.links?.demo && (
                 <motion.a
                     whileHover={{ scale: 1.05 }}
@@ -100,7 +117,11 @@ const ProjectsSection = () => {
                 "JWT Authentication for secure user sessions."
             ],
             links: {
-                github: "https://github.com/Ibrahim-142/ecommerce",
+                github: [
+    "https://github.com/Ibrahim-142/ecommerce",
+    "https://github.com/Ibrahim-142/ecommercebackend"
+  ],
+
                 demo: "https://www.loom.com/share/9e54c40c1d084e188537e3518d12a76b"
             }
         },
@@ -188,7 +209,7 @@ const ProjectsSection = () => {
                     className="mb-20 text-center"
                 >
                     <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 font-poppins">
-                        My <span className="text-sky-500/40">Creations</span>
+                        My <span className="text-sky-500/40">Projects</span>
                     </h2>
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg font-poppins italic">
                         A curated selection of projects demonstrating my ability to design, build, and deliver scalable, user-focused software solutions.

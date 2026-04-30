@@ -54,7 +54,7 @@ const ContactSection = () => {
         {
             title: "Resume",
             value: "Download PDF",
-            href: "/assets/Ibrahim_Resume.pdf",
+            href: "/assets/Muhammad_Ibrahim_Resume.pdf",
             icon: FileText
         }
     ];
