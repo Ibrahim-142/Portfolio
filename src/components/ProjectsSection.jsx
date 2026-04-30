@@ -108,7 +108,7 @@ const ProjectCard = ({ project, index }) => (
 const ProjectsSection = () => {
     const projects = [
         {
-            title: "SmartShop",
+            title: "SmartShop AI",
             description: "A full-stack e-commerce app with authentication (JWT), user-specific cart and order management.",
             tech: ["React (Vite)", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
             features: [
