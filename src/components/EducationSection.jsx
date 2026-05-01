@@ -65,10 +65,10 @@ const EducationSection = () => {
             degree: "Bachelor of Science in Software Engineering",
             institution: "Punjab University College of Information and Technology (PUCIT)",
             duration: "2022 - 2026",
-            grade: "Lahore, Pakistan",
+            grade: "CGPA: 3.16 / 4.0",
             status: null,
             icon: <GraduationCap size={28} className="text-sky-500" />
-        }
+        },
     ];
 
     return (

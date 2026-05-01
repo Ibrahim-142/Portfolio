@@ -97,6 +97,19 @@ const ProjectCard = ({ project, index }) => (
                     Live Demo
                 </motion.a>
             )}
+            {project.links?.walkthrough && (
+                <motion.a
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    href={project.links.walkthrough}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 rounded-xl text-white bg-zinc-800 hover:bg-zinc-700 transition flex items-center gap-2 font-medium"
+                >
+                    <ExternalLink size={18} />
+                    Walkthrough
+                </motion.a>
+            )}
         </div>
     </motion.section>
 );
@@ -122,7 +135,24 @@ const ProjectsSection = () => {
     "https://github.com/Ibrahim-142/ecommercebackend"
   ],
 
-                demo: "https://www.loom.com/share/9e54c40c1d084e188537e3518d12a76b"
+                walkthrough: "https://www.loom.com/share/9e54c40c1d084e188537e3518d12a76b",
+                demo:""
+            }
+        },
+           {
+            title: "AI Recipe Generator",
+            description: "AI recipe generator with authentication using Magic Link and optimized prompt workflows.",
+            tech: ["Next.js", "Supabase", "MongoDB", "Groq AI", "n8n"],
+            features: [
+                "Groq AI integration using n8n workflows.",
+                "Secure MongoDB storage for recipes.",
+                "Optimized AI response quality."
+            ],
+            links: {
+                github: "https://github.com/Ibrahim-142/Nexium_MuhammadIbrahim_Grand_Project",
+                demo:"https://nexium-muhammad-ibrahim-grand-proje.vercel.app/"
+                ,
+                walkthrough: "https://www.loom.com/share/38092fa103744dd38d0e3f1df3814197"
             }
         },
         {
@@ -167,20 +197,7 @@ const ProjectsSection = () => {
                 demo: "https://ibrahim145-whisperurdu-api.hf.space/docs#/default/transcribe_audio_transcribe_post"
             }
         },
-        {
-            title: "AI Recipe Generator",
-            description: "AI recipe generator with authentication using Magic Link and optimized prompt workflows.",
-            tech: ["Next.js", "Supabase", "MongoDB", "Groq AI", "n8n"],
-            features: [
-                "Groq AI integration using n8n workflows.",
-                "Secure MongoDB storage for recipes.",
-                "Optimized AI response quality."
-            ],
-            links: {
-                github: "https://github.com/Ibrahim-142/Nexium_MuhammadIbrahim_Grand_Project",
-                demo: "https://www.loom.com/share/38092fa103744dd38d0e3f1df3814197"
-            }
-        },
+     
         {
             title: "Blog Summarizer & Urdu Translator",
             description: "A web app to scrape articles, summarize, and translate to Urdu.",
@@ -192,7 +209,7 @@ const ProjectsSection = () => {
             ],
             links: {
                 github: "https://github.com/Ibrahim-142/Nexium_Muhammad_Ibrahim_Assign2/tree/main/Internship/assignment2",
-                demo: ""
+                demo: "https://nexium-muhammad-ibrahim-assign2.vercel.app/"
             }
         }
     ];
