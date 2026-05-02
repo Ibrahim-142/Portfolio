@@ -120,25 +120,43 @@ const ProjectCard = ({ project, index }) => (
  */
 const ProjectsSection = () => {
     const projects = [
-        {
-            title: "SmartShop AI",
-            description: "A full-stack e-commerce app with authentication (JWT), user-specific cart and order management.",
-            tech: ["React (Vite)", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-            features: [
-                "Secure REST APIs using MVC architecture with Context API.",
-                "Rule-based chatbot for product search and cart actions.",
-                "JWT Authentication for secure user sessions."
-            ],
-            links: {
-                github: [
-    "https://github.com/Ibrahim-142/ecommerce",
-    "https://github.com/Ibrahim-142/ecommercebackend"
-  ],
+          {
+    title: "ShopMate — Conversational Commerce Assistant",
+    description:
+      "A production-style full-stack e-commerce platform with secure authentication, user-specific cart and order management, and intelligent chatbot-based product assistance. Built with a decoupled frontend-backend architecture and deployed on Vercel.",
 
-                walkthrough: "https://www.loom.com/share/9e54c40c1d084e188537e3518d12a76b",
-                demo:""
-            }
-        },
+    tech: [
+      "React (Vite)",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT Authentication",
+      "Tailwind CSS",
+      "REST API Architecture"
+    ],
+
+    features: [
+      "Implemented secure authentication system using JWT with httpOnly cookies and role-based session handling.",
+      "Built scalable REST APIs using MVC architecture with Express and MongoDB.",
+      "Developed user-specific cart and order management system with persistent state.",
+      "Integrated rule-based chatbot for intelligent product search and cart interaction.",
+      "Handled cross-origin authentication between deployed frontend and backend using secure CORS configuration."
+    ],
+
+    links: {
+      github: [
+        "https://github.com/Ibrahim-142/ecommerce",
+        "https://github.com/Ibrahim-142/ecommercebackend"
+      ],
+
+      walkthrough:
+        "https://www.loom.com/share/9e54c40c1d084e188537e3518d12a76b",
+
+      demo:
+        "https://ecommercefronten-git-97493a-muhammad-ibrahims-projects-86ae7ef9.vercel.app/"
+    }
+  }
+,
            {
             title: "AI Recipe Generator",
             description: "AI recipe generator with authentication using Magic Link and optimized prompt workflows.",
