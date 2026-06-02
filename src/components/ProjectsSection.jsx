@@ -153,7 +153,7 @@ const ProjectsSection = () => {
         "https://www.loom.com/share/9e54c40c1d084e188537e3518d12a76b",
 
       demo:
-        "https://ecommercefronten-git-97493a-muhammad-ibrahims-projects-86ae7ef9.vercel.app/"
+        "https://shopmatefrontend.vercel.app/"
     }
   }
 ,
