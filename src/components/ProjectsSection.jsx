@@ -153,10 +153,25 @@ const ProjectsSection = () => {
         "https://www.loom.com/share/918b685cb4d649f4b6d4e7c13a6a4f60",
 
       demo:
-        "https://shopmatefrontend.vercel.app/"
+        "https://shop-mate-ai-tau.vercel.app/"
     }
   }
 ,
+ {
+            title: "AI Medical Scribe FYP",
+            description: "An AI medical scribe for real-time transcription and SOAP notes generation.",
+            tech: ["FastAPI", "React", "WebSockets", "Celery", "PostgreSQL"],
+            features: [
+                "Real-time transcription using WebSockets.",
+                "Scalable backend architecture with Celery.",
+                "React SPA with JWT auth and real-time UI.",
+                "SOAP notes system using Whisper Open AI Model"
+            ],
+            links: {
+                github: "",
+                walkthrough: "https://drive.google.com/file/d/1rbv1iiCIYIquOgY1Q5MixwVn8fkEvrtB/view"
+            }
+        },
            {
             title: "AI Recipe Generator",
             description: "AI recipe generator with authentication using Magic Link and optimized prompt workflows.",
@@ -173,20 +188,7 @@ const ProjectsSection = () => {
                 walkthrough: "https://www.loom.com/share/38092fa103744dd38d0e3f1df3814197"
             }
         },
-        {
-            title: "AI Medical Scribe FYP",
-            description: "An AI medical scribe for real-time transcription and SOAP notes generation.",
-            tech: ["FastAPI", "React", "WebSockets", "Celery", "PostgreSQL"],
-            features: [
-                "Real-time transcription using WebSockets.",
-                "Scalable backend architecture with Celery.",
-                "React SPA with JWT auth and real-time UI."
-            ],
-            links: {
-                github: "",
-                demo: "https://testscribe.notepoint.cloud/"
-            }
-        },
+       
         {
             title: "FoodPanda Clone",
             description: "A food delivery app with authentication, authorization, and real-time order management.",
