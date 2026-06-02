@@ -150,7 +150,7 @@ const ProjectsSection = () => {
       ],
 
       walkthrough:
-        "https://www.loom.com/share/9e54c40c1d084e188537e3518d12a76b",
+        "https://www.loom.com/share/918b685cb4d649f4b6d4e7c13a6a4f60",
 
       demo:
         "https://shopmatefrontend.vercel.app/"
