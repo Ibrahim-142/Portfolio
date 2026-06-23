@@ -130,6 +130,7 @@ const ProjectsSection = () => {
       "Node.js",
       "Express",
       "MongoDB",
+      "ASP.NET Core",
       "JWT Authentication",
       "Tailwind CSS",
       "REST API Architecture"
